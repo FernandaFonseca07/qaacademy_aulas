@@ -1,36 +1,36 @@
 package Exercicios_easy;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio05_easy {
-    public static void main(String[] args) {
-        int primeiroNumero, segundoNumero, terceiroNumero, soma, subtracao, multiplicacao, media;
-        String primeiroNumeroDigitado, segundoNumeroDigitado, terceiroNumeroDigitado;
-
-        primeiroNumeroDigitado = JOptionPane.showInputDialog ("Digite o primeiro número!");
-        segundoNumeroDigitado = JOptionPane.showInputDialog ("Digite o segundo número!");
-        terceiroNumeroDigitado = JOptionPane.showInputDialog ("Digite o terceiro número!");
-
-        primeiroNumero = Integer.parseInt(primeiroNumeroDigitado);
-        segundoNumero = Integer.parseInt(segundoNumeroDigitado);
-        terceiroNumero = Integer.parseInt(terceiroNumeroDigitado);
+    // Calculo da soma
+    public int soma(int primeiroNumero, int segundoNumero, int terceiroNumero) {
+        int soma;
 
         soma = primeiroNumero + segundoNumero + terceiroNumero;
+        return soma;
+    }
+
+    // calculo de subtração
+    public int subtracao(int primeiroNumero, int segundoNumero, int terceiroNumero) {
+        int subtracao;
         subtracao = primeiroNumero - segundoNumero - terceiroNumero;
-        multiplicacao = primeiroNumero * segundoNumero * terceiroNumero;
-        media = (primeiroNumero + segundoNumero + terceiroNumero) /3;
-
-        System.out.println("A soma dos números digitados é: " + soma);
-        System.out.println("A subtração dos números digitados é: " + subtracao);
-        System.out.println("A multiplicação dos números digitados é: " + multiplicacao);
-        System.out.println("A média dos números digitados é: " + media);
-
-        JOptionPane.showMessageDialog (null, "A soma dos números digitados é: " + soma);
-        JOptionPane.showMessageDialog (null, "A subtração dos números digitados é: " + subtracao);
-        JOptionPane.showMessageDialog (null, "A multiplicação dos números digitados é: " + multiplicacao);
-        JOptionPane.showMessageDialog (null, "A média dos números digitados é: " + media);
-
-
+        return subtracao;
     }
     
+    // calculo de multiplicação
+    public int multiplicacao (int primeiroNumero, int segundoNumero, int terceiroNumero) {
+        int multiplicacao;
+        multiplicacao = primeiroNumero * segundoNumero * terceiroNumero;
+        return multiplicacao;
+    }
+
+    //calculo de média
+        public int media (int soma) {
+            int media;
+            media = soma/3;
+            return media;
+
+        }
+
+
 }
+
