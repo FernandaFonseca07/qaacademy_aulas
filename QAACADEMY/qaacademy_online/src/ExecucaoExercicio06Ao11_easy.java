@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 import Exercicios_easy.Exercicio06_easy;
 import Exercicios_easy.Exercicio07_easy;
 import Exercicios_easy.Exercicio08_easy;
+import Exercicios_easy.Exercicio09_easy;
 
 public class ExecucaoExercicio06Ao11_easy {
     public static void main(String[] args) {
@@ -31,9 +32,9 @@ public class ExecucaoExercicio06Ao11_easy {
         double inss = exercicio07_easy.calcularINSS(salario);
         System.out.println("O valor do salário com desconto do INSS é: R$ " + (salario - inss));
 
-
         // Exercicio08_easy
-        String salarioBrutoDigitado = JOptionPane.showInputDialog("Digite o valor do seu salário para calcular o Imposto de Renda!");
+        String salarioBrutoDigitado = JOptionPane
+                .showInputDialog("Digite o valor do seu salário para calcular o Imposto de Renda!");
         double salarioBruto = Double.parseDouble(salarioBrutoDigitado);
 
         Exercicio08_easy exercicio08_easy = new Exercicio08_easy();
@@ -43,6 +44,14 @@ public class ExecucaoExercicio06Ao11_easy {
         System.out.println("O Imposto de Renda a ser pago é = R$ " + (impostoRenda));
 
         System.out.println("O salário líquido é = R$ " + exercicio08_easy.calcularImpostoDeRenda(salarioBruto));
+
+
+        // Exercicio09_easy
+        String numeroDigitado = JOptionPane.showInputDialog("Digite um número inteiro para calcular tabuada");
+        int numero = Integer.parseInt(numeroDigitado);
+
+        Exercicio09_easy exercicio09_easy = new Exercicio09_easy();
+        exercicio09_easy.calcularTabuada(numero);
 
     }
 

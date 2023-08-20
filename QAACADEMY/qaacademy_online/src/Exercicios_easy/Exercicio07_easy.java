@@ -24,7 +24,7 @@ public class Exercicio07_easy {
         if (salario >= 6101.07) {
             return inss = 6101.06 * 0.075;
         }
-        return 0.0;
+        return inss;
     
     }
 }
