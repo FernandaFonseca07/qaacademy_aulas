@@ -49,6 +49,7 @@ public class ExecucaoExercicio06Ao11_easy {
         Exercicio09_easy exercicio09_easy = new Exercicio09_easy();
         exercicio09_easy.calcularTabuada(numero);
 
+
         // Exercicio10_easy
         String valorInvestimentoDigitado = JOptionPane.showInputDialog("Digite o valor do seu investimento!");
         double valorInvestimento = Double.parseDouble(valorInvestimentoDigitado);
@@ -61,6 +62,14 @@ public class ExecucaoExercicio06Ao11_easy {
         double valorTotalInvestimento;
         valorTotalInvestimento = valorInvestimento + exercicio10_easy.calculoJuros(valorInvestimento);
         System.out.println("O valor total do investimento em 10 anos é: R$ " + valorTotalInvestimento);
+
+
+        // Exercicio11_easy
+        String numeroDigitadoExercicio11 = JOptionPane.showInputDialog("Digite um número!");
+        numero = Integer.parseInt(numeroDigitadoExercicio11);
+
+        Exercicio11_easy exercicio11_easy = new Exercicio11_easy();
+        exercicio11_easy.calculoInteracoes(numero);
 
     }
 
