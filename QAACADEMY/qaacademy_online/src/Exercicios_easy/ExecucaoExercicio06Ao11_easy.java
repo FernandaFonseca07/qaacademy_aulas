@@ -1,9 +1,6 @@
-import javax.swing.JOptionPane;
+package Exercicios_easy;
 
-import Exercicios_easy.Exercicio06_easy;
-import Exercicios_easy.Exercicio07_easy;
-import Exercicios_easy.Exercicio08_easy;
-import Exercicios_easy.Exercicio09_easy;
+import javax.swing.JOptionPane;
 
 public class ExecucaoExercicio06Ao11_easy {
     public static void main(String[] args) {
@@ -45,13 +42,25 @@ public class ExecucaoExercicio06Ao11_easy {
 
         System.out.println("O salário líquido é = R$ " + exercicio08_easy.calcularImpostoDeRenda(salarioBruto));
 
-
         // Exercicio09_easy
         String numeroDigitado = JOptionPane.showInputDialog("Digite um número inteiro para calcular tabuada");
         int numero = Integer.parseInt(numeroDigitado);
 
         Exercicio09_easy exercicio09_easy = new Exercicio09_easy();
         exercicio09_easy.calcularTabuada(numero);
+
+        // Exercicio10_easy
+        String valorInvestimentoDigitado = JOptionPane.showInputDialog("Digite o valor do seu investimento!");
+        double valorInvestimento = Double.parseDouble(valorInvestimentoDigitado);
+
+        Exercicio10_easy exercicio10_easy = new Exercicio10_easy();
+
+        System.out.println("O valor do investimento inicial é: R$ " + (valorInvestimento));
+        System.out.println("O valor do juros em 10 anos é: R$ " + exercicio10_easy.calculoJuros(valorInvestimento));
+
+        double valorTotalInvestimento;
+        valorTotalInvestimento = valorInvestimento + exercicio10_easy.calculoJuros(valorInvestimento);
+        System.out.println("O valor total do investimento em 10 anos é: R$ " + valorTotalInvestimento);
 
     }
 
