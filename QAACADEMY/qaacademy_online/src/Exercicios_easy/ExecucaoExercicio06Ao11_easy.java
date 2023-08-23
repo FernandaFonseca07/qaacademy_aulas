@@ -55,13 +55,15 @@ public class ExecucaoExercicio06Ao11_easy {
         double valorInvestimento = Double.parseDouble(valorInvestimentoDigitado);
 
         Exercicio10_easy exercicio10_easy = new Exercicio10_easy();
+        double valorJuros, valorTotalInvestimento;
+
+        valorJuros = exercicio10_easy.calculoJuros(valorInvestimento);
+        valorTotalInvestimento = valorInvestimento + valorJuros;
 
         System.out.println("O valor do investimento inicial é: R$ " + (valorInvestimento));
-        System.out.println("O valor do juros em 10 anos é: R$ " + exercicio10_easy.calculoJuros(valorInvestimento));
-
-        double valorTotalInvestimento;
-        valorTotalInvestimento = valorInvestimento + exercicio10_easy.calculoJuros(valorInvestimento);
+        System.out.println("O valor do juros em 10 anos é: R$ " + valorJuros);
         System.out.println("O valor total do investimento em 10 anos é: R$ " + valorTotalInvestimento);
+
 
 
         // Exercicio11_easy
