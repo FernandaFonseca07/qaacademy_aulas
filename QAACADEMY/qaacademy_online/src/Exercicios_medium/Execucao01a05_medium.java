@@ -30,6 +30,16 @@ public class Execucao01a05_medium {
     exercicio03_medium.calcularInteracoesComBreak();
 
 
+    //Exercicio04_medium
+    Exercicio04_medium exercicio04_medium = new Exercicio04_medium();
+    exercicio04_medium.exibirResultadoMilInteracoes();
+
+
+    //Exercicio05_medium
+    Exercicio05_medium exercicio05_medium = new Exercicio05_medium();
+    exercicio05_medium.menorNumeroDigitado();
+
+
 
     }
 }

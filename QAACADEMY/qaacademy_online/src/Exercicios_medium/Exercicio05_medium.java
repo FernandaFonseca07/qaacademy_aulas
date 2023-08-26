@@ -3,7 +3,7 @@ package Exercicios_medium;
 import javax.swing.JOptionPane;
 
 public class Exercicio05_medium {
-    public static void main(String[] args) {
+    public void menorNumeroDigitado () {
         int numeroDigitado=0, menorNumero=0, i=0;
 
         while (i<5) {
