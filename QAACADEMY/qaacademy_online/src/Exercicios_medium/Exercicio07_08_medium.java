@@ -1,7 +1,7 @@
 package Exercicios_medium;
 
 public class Exercicio07_08_medium {
-    public static void main(String[] args) {
+    public void mesesEmVetores() {
         int i = 0;
         String[] vetorMeses;
         vetorMeses = new String[12];

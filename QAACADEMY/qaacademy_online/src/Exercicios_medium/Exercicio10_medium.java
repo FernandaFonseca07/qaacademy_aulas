@@ -3,10 +3,9 @@ package Exercicios_medium;
 import javax.swing.JOptionPane;
 
 public class Exercicio10_medium {
-    public static void main(String[] args) {
+    public void calculoFibonacci() {
         int elemento, i = 2;
         String elementoDigitado;
-
         elementoDigitado = JOptionPane.showInputDialog("Digite o número para calcular o Fibonacci!");
         elemento = Integer.parseInt(elementoDigitado);
 

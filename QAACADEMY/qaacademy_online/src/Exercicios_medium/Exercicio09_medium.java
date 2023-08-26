@@ -3,7 +3,7 @@ package Exercicios_medium;
 import javax.swing.JOptionPane;
 
 public class Exercicio09_medium {
-    public static void main(String[] args) {
+    public void vetorNomesENumeros () {
         String[] vetorNomesAlunos;
         int[] vetorNumeroAlunos;
         int i = 0;
@@ -12,8 +12,8 @@ public class Exercicio09_medium {
         vetorNumeroAlunos = new int[5];
 
         while (i < 5) {
-            vetorNomesAlunos[i] = JOptionPane.showInputDialog("Escreva o nome do aluno");
-            vetorNumeroAlunos[i] = Integer.parseInt(JOptionPane.showInputDialog("Escreva o nome do aluno"));
+            vetorNomesAlunos[i] = JOptionPane.showInputDialog("Escreva o NOME do aluno");
+            vetorNumeroAlunos[i] = Integer.parseInt(JOptionPane.showInputDialog("Escreva o NÚMERO do aluno"));
             System.out.println("Aluno (a): " + vetorNomesAlunos[i] + " Número: " + vetorNumeroAlunos[i]);
             i++;
         }
