@@ -1,7 +1,7 @@
 package Exercicios_medium;
 public class Exercicio01_medium {
 
-public static void main(String[] args) {
+public void verificarParEImpar () {
     int i = 0;
 
     while (i <= 100) {
