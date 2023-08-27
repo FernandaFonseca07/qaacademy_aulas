@@ -17,5 +17,6 @@ public class Exercicio09_medium {
             System.out.println("Aluno (a): " + vetorNomesAlunos[i] + " Número: " + vetorNumeroAlunos[i]);
             i++;
         }
+
     }
 }

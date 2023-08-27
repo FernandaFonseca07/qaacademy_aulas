@@ -17,7 +17,8 @@ public class Execucao06a10_medium {
 
     //Exercicio07_08_medium
     Exercicio07_08_medium exercicio07_08_medium = new Exercicio07_08_medium();
-    exercicio07_08_medium.mesesEmVetores();
+    String [] vetorMeses = exercicio07_08_medium.mesesEmVetores();
+    exercicio07_08_medium.imprimeMeses(vetorMeses);
 
 
     //Exercicio09_medium

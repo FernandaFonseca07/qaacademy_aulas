@@ -20,12 +20,17 @@ public class Exercicio10_medium {
             i++;
         }
 
+        imprimeElementosFibonacci(elemento, fibonacci);
+
+    }
+
+    private void imprimeElementosFibonacci(int elemento, int[] fibonacci) {
+        int i;
         i = 0;
 
         while (i < elemento) {
             System.out.println("Termo: " + (i + 1) + " do Fibonacci é: " + fibonacci[i]);
             i++;
         }
-
     }
 }
